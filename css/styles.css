@@ -487,8 +487,8 @@ nav span {
     -webkit-align-items: center;
     -ms-align-items: center;
     align-items: center;
-    height: 450px;
-    padding-top: 250px;
+    height: 440px;
+    padding-top: 200px;
 }
 
 #header .logo {
@@ -498,7 +498,7 @@ nav span {
 .logo-desc {
     font-family: Quicksand, 游ゴシック体, "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
     display: block;
-    font-size: 40px;
+    font-size: 60px;
     letter-spacing: .2em;
     text-align: center;
     color: #fff;
@@ -533,7 +533,7 @@ nav span {
     z-index: 2;
     line-height: 1;
     letter-spacing: .1em;
-    font-size: 88px;
+    font-size: 110px;
 }
 
 .individual-bubble {
@@ -560,8 +560,8 @@ nav span {
 
 .cross-layout {
     display: grid;
-    grid-template-columns: 40px 40px 40px;
-    grid-template-rows: 40px 40px 40px;
+    grid-template-columns: 30px 30px 30px;
+    grid-template-rows: 30px 30px 30px;
 }
 
 .cross-layout .position-top {
@@ -593,8 +593,8 @@ nav span {
 /**　コントローラーの右側_ABXYボタン**/
 
 .abxy-btn {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
     color: white;
 }
@@ -639,8 +639,8 @@ nav span {
 /**　コントローラーの左側_十字キー**/
 
 .cross-key-btn {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     background-color: rgba(66, 86, 123, 0.5);
 }
 
@@ -674,7 +674,7 @@ nav span {
 
 .selectstart-btn {
     width: 20px;
-    height: 35px;
+    height: 30px;
     border-radius: 15%;
     background-color: rgba(66, 86, 123, 0.5);
     transform: rotate(30deg);
@@ -700,7 +700,7 @@ nav span {
 
 .controller-center {
     margin-top: 10px;
-    width: 280px;
+    width: 260px;
     height: 150px;
     background-color: rgb(229, 227, 250);
 }
