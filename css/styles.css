@@ -1522,7 +1522,7 @@ textarea:hover {
     }
     /**　コントローラーの右側_ABXYボタンを灰色の円形で囲んだものをさらに灰色の円形で囲む**/
     .controller-right {
-        padding: 15px;
+        padding: 10px;
     }
     /**　コントローラーの左側_十字キー**/
     .cross-key-btn {
@@ -1535,25 +1535,25 @@ textarea:hover {
     }
     /**　コントローラーの真ん中_スタートボタン(セレクトボタン)**/
     .selectstart-btn {
-        width: 10px;
-        height: 25px;
+        width: 5px;
+        height: 20px;
     }
     /**　コントローラーの真ん中_スタートボタンとセレクトボタンを並べる**/
     .selectstart-btn:first-child {
-        margin-right: 10px;
+        margin-right: 5px;
     }
     /**　コントローラーの真ん中_スタートボタン・セレクトボタンとLogoを書く領域を一つにまとめる**/
     .controller-center {
-        margin-top: 10px;
-        width: 230px;
-        height: 100px;
+        margin-top: 5px;
+        width: 220px;
+        height: 80px;
     }
     .controller-center .logo-msg {
-        width: 120px;
-        padding-top: 20px;
+        width: 100px;
+        padding-top: 10px;
     }
     .controller-center .selectstart-btn-set {
         width: 120px;
-        margin-top: 20px;
+        margin-top: 10px;
     }
 }
