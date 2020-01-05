@@ -1508,13 +1508,13 @@ textarea:hover {
     }
     /** 下準備_十字配置部品 **/
     .cross-layout {
-        grid-template-columns: 20px 20px a20px;
+        grid-template-columns: 20px 20px 20px;
         grid-template-rows: 20px 20px 20px;
     }
     /**　コントローラーの右側_ABXYボタン**/
     .abxy-btn {
-        width: 23px;
-        height: 23px;
+        width: 20px;
+        height: 20px;
     }
     /**　コントローラーの右側_ABXYボタンを灰色の円形で囲む**/
     .abxy-btn-set {
