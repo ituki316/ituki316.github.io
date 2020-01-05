@@ -589,14 +589,6 @@ nav span {
     grid-column: 2/3;
 }
 
-.center-mark {
-    font-size: 20px;
-}
-
-.bottom-mark {
-    font-size: 20px;
-}
-
 
 /**　コントローラーの右側_ABXYボタン**/
 
@@ -605,7 +597,6 @@ nav span {
     height: 35px;
     border-radius: 50%;
     color: white;
-    font-size: 20px;
 }
 
 .btn-x {
@@ -1517,21 +1508,13 @@ textarea:hover {
     }
     /** 下準備_十字配置部品 **/
     .cross-layout {
-        grid-template-columns: 20px 20px 20px;
+        grid-template-columns: 20px 20px a20px;
         grid-template-rows: 20px 20px 20px;
-    }
-    .center-mark {
-        font-size: 8px;
-    }
-    .bottom-mark {
-        font-size: 18px;
-        padding-right: 10px;
     }
     /**　コントローラーの右側_ABXYボタン**/
     .abxy-btn {
         width: 23px;
         height: 23px;
-        font-size: 15px;
     }
     /**　コントローラーの右側_ABXYボタンを灰色の円形で囲む**/
     .abxy-btn-set {
