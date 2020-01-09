@@ -589,6 +589,11 @@ nav span {
     grid-column: 2/3;
 }
 
+.cross-layout .position-centers {
+    grid-row: 1/ 5;
+    grid-column: 1 / 6;
+}
+
 
 /**　コントローラーの右側_ABXYボタン**/
 
@@ -639,8 +644,9 @@ nav span {
 /**　コントローラーの左側_十字キー**/
 
 .cross-key-btn {
-    width: 30px;
-    height: 30px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
     background-color: rgba(66, 86, 123, 0.5);
 }
 
