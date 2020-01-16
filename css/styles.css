@@ -1512,54 +1512,8 @@ textarea:hover {
         padding: 0 10px;
         margin-bottom: 5px;
     }
-    /** 下準備_十字配置部品 **/
-    .cross-layout {
-        grid-template-columns: 20px 20px 20px;
-        grid-template-rows: 20px 20px 20px;
-    }
-    /**　コントローラーの右側_ABXYボタン**/
-    .abxy-btn {
-        width: 20px;
-        height: 20px;
-    }
-    /**　コントローラーの右側_ABXYボタンを灰色の円形で囲む**/
-    .abxy-btn-set {
-        padding: 20px;
-    }
-    /**　コントローラーの右側_ABXYボタンを灰色の円形で囲んだものをさらに灰色の円形で囲む**/
-    .controller-right {
-        padding: 10px;
-    }
-    /**　コントローラーの左側_十字キー**/
-    .cross-key-btn {
-        width: 20px;
-        height: 20px;
-    }
-    /**　コントローラーの左側_十字キーを灰色の円形で囲む**/
-    .controller-left {
-        padding: 30px;
-    }
-    /**　コントローラーの真ん中_スタートボタン(セレクトボタン)**/
-    .selectstart-btn {
-        width: 5px;
-        height: 20px;
-    }
-    /**　コントローラーの真ん中_スタートボタンとセレクトボタンを並べる**/
-    .selectstart-btn:first-child {
-        margin-right: 5px;
-    }
-    /**　コントローラーの真ん中_スタートボタン・セレクトボタンとLogoを書く領域を一つにまとめる**/
-    .controller-center {
-        margin-top: 5px;
-        width: 220px;
-        height: 80px;
-    }
-    .controller-center .logo-msg {
-        width: 100px;
-        padding-top: 10px;
-    }
-    .controller-center .selectstart-btn-set {
-        width: 120px;
-        margin-top: 10px;
+    /* ファミコン */
+    .uuu {
+        display: none;
     }
 }
