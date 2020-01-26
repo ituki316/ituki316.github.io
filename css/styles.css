@@ -370,6 +370,8 @@ p {
     min-height: 900px;
     letter-spacing: 2px;
     font-family: "Montserrat", sans-serif;
+    max-width: 100%;
+    height: auto;
 }
 
 .hero h1 {
@@ -517,6 +519,8 @@ p {
     min-height: 900px;
     letter-spacing: 2px;
     font-family: "Montserrat", sans-serif;
+    max-width: 100%;
+    height: auto;
 }
 
 .sec02,
@@ -575,6 +579,8 @@ p {
     min-height: 900px;
     letter-spacing: 2px;
     font-family: "Montserrat", sans-serif;
+    max-width: 100%;
+    height: auto;
 }
 
 
@@ -593,6 +599,8 @@ p {
     min-height: 900px;
     letter-spacing: 2px;
     font-family: "Montserrat", sans-serif;
+    max-width: 100%;
+    height: auto;
 }
 
 .contact p {
