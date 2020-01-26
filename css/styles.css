@@ -350,7 +350,8 @@ a {
 
 .hero {
     position: relative;
-    background: url(route246.jpg) fixed;
+    background: url(route246.jpg) no-repeat center center fixed;
+    ;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -377,7 +378,7 @@ a {
 
 @media only screen and (max-width: 500px) {
     .hero {
-        background-image: url(retop.jpg);
+        background: url(route246.jpg)
     }
 }
 
@@ -442,7 +443,7 @@ a {
     margin: 0 auto;
     position: absolute;
     bottom: 40px;
-    left: 50%;
+    left: 49%;
     font-family: 'Luckiest Guy', cursive;
 }
 
@@ -487,7 +488,8 @@ a {
 
 .profile {
     position: relative;
-    background: url(alonemen.jpg) fixed;
+    background: url(alonemen.jpg) no-repeat center center fixed;
+    ;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -496,6 +498,12 @@ a {
     min-height: 900px;
     letter-spacing: 2px;
     font-family: "Montserrat", sans-serif;
+}
+
+@media only screen and (max-width: 500px) {
+    .profile {
+        background: url(alonemen.jpg)
+    }
 }
 
 .sec02,
@@ -532,7 +540,7 @@ a {
 
 @media only screen and (max-width: 500px) {
     .profile {
-        background-image: url(rehumn.jpg);
+        background-image: url(alonemen.jpg);
     }
 }
 
@@ -543,7 +551,8 @@ a {
 
 .skill {
     position: relative;
-    background: url(book.jpg) fixed;
+    background: url(book.jpg) no-repeat center center fixed;
+    ;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -556,7 +565,7 @@ a {
 
 @media only screen and (max-width: 500px) {
     .skill {
-        background-image: url(retime.jpg);
+        background-image: url(book.jpg);
     }
 }
 
@@ -567,7 +576,7 @@ a {
 
 .contact {
     position: relative;
-    background: url(sky.jpg) fixed;
+    background: url(sky.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -578,6 +587,12 @@ a {
     min-height: 900px;
     letter-spacing: 2px;
     font-family: "Montserrat", sans-serif;
+}
+
+@media only screen and (max-width: 500px) {
+    .contact {
+        background: url(sky.jpg)
+    }
 }
 
 .contact p {
