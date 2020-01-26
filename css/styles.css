@@ -360,7 +360,7 @@ p {
 
 .hero {
     position: relative;
-    background: url(route246.jpg) no-repeat center center fixed;
+    background: url(route246.jpg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -370,8 +370,6 @@ p {
     min-height: 900px;
     letter-spacing: 2px;
     font-family: "Montserrat", sans-serif;
-    max-width: 100%;
-    height: auto;
 }
 
 .hero h1 {
@@ -510,17 +508,15 @@ p {
 
 .profile {
     position: relative;
-    background: url(alonemen.jpg) no-repeat center center fixed;
+    background: url(alonemen.jpg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     color: #fff;
-    padding-top: 56.17%;
+    padding-top: 110px;
     min-height: 900px;
     letter-spacing: 2px;
     font-family: "Montserrat", sans-serif;
-    max-width: 100%;
-    height: auto;
 }
 
 .sec02,
@@ -575,12 +571,10 @@ p {
     -moz-background-size: cover;
     background-size: cover;
     color: #fff;
-    padding-top: 56.17%;
+    padding-top: 110px;
     min-height: 900px;
     letter-spacing: 2px;
     font-family: "Montserrat", sans-serif;
-    max-width: 100%;
-    height: auto;
 }
 
 
@@ -590,17 +584,15 @@ p {
 
 .contact {
     position: relative;
-    background: url(sky.jpg) no-repeat center center fixed;
+    background: url(sky.jpg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     color: #fff;
-    padding-top: 56.17%;
+    padding-top: 110px;
     min-height: 900px;
     letter-spacing: 2px;
     font-family: "Montserrat", sans-serif;
-    max-width: 100%;
-    height: auto;
 }
 
 .contact p {
