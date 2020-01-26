@@ -508,6 +508,9 @@ textarea::placeholder {
     #form {
         width: 300px;
     }
+    .contact p {
+        width: 300px;
+    }
     input {
         font-family: 'Lato', sans-serif;
         width: 300px;
