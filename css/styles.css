@@ -554,20 +554,11 @@ a {
     -moz-background-size: cover;
     background-size: cover;
     color: #fff;
-    padding-bottom: 0;
-    margin: 0;
+    padding-top: 110px;
     min-height: 900px;
     letter-spacing: 2px;
     font-family: "Montserrat", sans-serif;
     height: auto;
-}
-
-.contact p {
-    width: 520px;
-    margin: 30px auto 60px auto;
-    padding: 0px 15px 0px 15px;
-    font-size: 17px;
-    line-height: 2;
 }
 
 #form {
