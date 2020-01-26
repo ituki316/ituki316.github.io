@@ -429,38 +429,21 @@ a {
 }
 
 
-/* number design */
+/* numbers design */
 
-.mouse {
+.numbers {
     display: block;
     margin: 0 auto;
-    width: 26px;
-    height: 46px;
-    border-radius: 13px;
-    border: 2px solid #e8f380;
     position: absolute;
     bottom: 40px;
-    position: absolute;
-    left: 48%;
-    margin-left: -26px;
+    left: 50%;
+    font-family: 'Luckiest Guy', cursive;
 }
 
-.mouse span {
-    display: block;
-    margin: 6px auto;
-    width: 2px;
-    height: 2px;
-    border-radius: 4px;
-    background: #e8f380;
-    border: 1px solid transparent;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-    -webkit-animation-name: scroll;
-    animation-name: scroll;
+.numbers span {
+    color: #f5ff97;
+    font-size: 60px;
+    font-weight: normal;
 }
 
 @-webkit-keyframes scroll {
@@ -525,21 +508,6 @@ a {
     padding: 70px 120px;
     font-size: 17px;
     line-height: 2;
-}
-
-.numbers {
-    display: block;
-    margin: 0 auto;
-    position: absolute;
-    bottom: 40px;
-    left: 50%;
-    font-family: 'Luckiest Guy', cursive;
-}
-
-.numbers span {
-    color: #f5ff97;
-    font-size: 60px;
-    font-weight: normal;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -676,6 +644,9 @@ textarea::placeholder {
     textarea {
         width: 300px;
         max-width: 300px;
+    }
+    .contact p {
+        width: 300px;
     }
     #submit {
         width: 300px;
