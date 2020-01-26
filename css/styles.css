@@ -640,13 +640,28 @@
         overflow: hidden;
     }
     
-    @media screen and (max-width: 520px) {
-        .bg-div {
-            background-image: url("images/puppy.jpg");
-            background-position: 50% 50%;
-            /* 画像中央を起点に表示 */
-            background-size: cover;
-            /* 縦横比を維持しながら全体を覆うように表示 */
-            padding: 1em;
+    @media only screen and (max-width: 767px) {
+        .skill {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 72.9%;
+            background-color: #333;
+            background-image: url(book.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% auto;
         }
+    }
+    
+    .skill {
+        position: relative;
+        background: url(book.jpg);
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        color: #fff;
+        padding-top: 110px;
+        min-height: 900px;
+        letter-spacing: 2px;
+        font-family: "Montserrat", sans-serif;
     }
