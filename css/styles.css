@@ -685,3 +685,7 @@ textarea::placeholder {
         width: 300px;
     }
 }
+
+.wrap {
+    overflow: hidden;
+}

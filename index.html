@@ -10,99 +10,100 @@
 </head>
 
 <body class="KazukiWatarai">
-    <header class="main_h">
+    <div class="wrap">
+        <header class="main_h">
 
-        <div class="row">
-            <a class="logo" href="#"><img src="img/headermylogo.png" class="aaa" width="80" height="80"></a>
+            <div class="row">
+                <a class="logo" href="#"><img src="img/headermylogo.png" class="aaa" width="80" height="80"></a>
 
-            <div class="mobile-toggle">
-                <span></span>
-                <span></span>
+                <div class="mobile-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li>
+                            <a href=".profile"><img src="img/myprofile.png" width="80" height="80"></a>
+                        </li>
+                        <li>
+                            <a href=".skill"><img src="img/myskill.png" width="80" height="80"></a>
+                        </li>
+                        <li>
+                            <a href=".contact"><img src="img/mycontact.png" width="80" height="80"></a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+            <!-- / row -->
+        </header>
+
+        <!-- class hero -->
+        <div class="hero">
+
+            <h1><span>I'm a cool</span></h1>
+            <div class="logo-desc">
+                <ul>
+                    <li class="text">Web Engineer</li>
+                    <li class="text">Web Designer</li>
+                </ul>
+            </div>
+
+            <div class="bubbles">
+                <h1>Kazuki Watarai</h1>
+            </div>
+
+            <div class="mouse">
                 <span></span>
             </div>
 
-            <nav>
-                <ul>
-                    <li>
-                        <a href=".profile"><img src="img/myprofile.png" width="80" height="80"></a>
-                    </li>
-                    <li>
-                        <a href=".skill"><img src="img/myskill.png" width="80" height="80"></a>
-                    </li>
-                    <li>
-                        <a href=".contact"><img src="img/mycontact.png" width="80" height="80"></a>
-                    </li>
-                </ul>
-            </nav>
-
-        </div>
-        <!-- / row -->
-    </header>
-
-    <!-- class hero -->
-    <div class="hero">
-
-        <h1><span>I'm a cool</span></h1>
-        <div class="logo-desc">
-            <ul>
-                <li class="text">Web Engineer</li>
-                <li class="text">Web Designer</li>
-            </ul>
         </div>
 
-        <div class="bubbles">
-            <h1>Kazuki Watarai</h1>
+        <!-- class profile -->
+        <div class="profile">
+            <h1 class="sec02">Profile</h1>
+            <p>はじめまして。平成11年生まれの20歳の度会一輝と申します。 programingを始めたのが2019年8月に視野を広げようと思いSEのインターシップに参加し、 そこでのアプリ開発でprograming技術に興味と感動の二つの体験がきっかけ。 しかしSE職は1-10を作るという考えより3の部分を専門的に行うイメージが強く、 1-10できるprograming職はないのか？と調べた結果、フロントエンジニアを発見しhtml、cssを勉強スタート。今では
+            </p>
+
+            <div class="numbers">
+                <span>1</span>
+            </div>
         </div>
 
-        <div class="mouse">
-            <span></span>
+        <!-- class skill -->
+        <div class="skill">
+            <h1 class="sec03">Skill</h1>
+            <p>主にHTML/CSS/JavaScriptを学んでいます。 HTML/CSS/JavaScriptで動的な機能を実装したポートフォリオを作成したり、 JavaScriptを使いテトリスを作成したりなど日々インプットとアウトプットに努めています。 フロントエンドもサーバーエンドもできるようになり、後々フルスタックエンジニアになれるように日々精進しております。 またprogrammingに触れる前には金融、財政の勉強もしておりFP2級も取得してるため、少しはライフプランニングのお話もできます。
+            </p>
+
+            <div class="numbers">
+                <span>2</span>
+            </div>
         </div>
 
+        <!-- class contact -->
+
+        <div class="contact">
+            <h1 class="sec04">contact</h1>
+            <p>何かありましたら以下のcontactformからどしどしご連絡をください。挨拶などのメールも大歓迎です。</p>
+            <form id="form" class="topBefore" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdaBvhKP3AZXDIUgLjn79hO7ECrpRM3HcY4i_rtxaka8lZFtA/formResponse" method="post">
+                <input id="name" type="text" name="entry.2005620554" placeholder=" Your Name">
+                <input id="email" type="email" name="entry.1045781291" placeholder="Your Email">
+                <textarea id="message" type="text" name="entry.839337160" rows="5" cols="30" placeholder="messages..."></textarea>
+                <input id="submit" type="submit" value="submit!!">
+            </form>
+
+            <div class="numbers">
+                <span>3</span>
+            </div>
+        </div>
+        <!-- script -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <script src="js/main.js"></script>
     </div>
-
-    <!-- class profile -->
-    <div class="profile">
-        <h1 class="sec02">Profile</h1>
-        <p>はじめまして。平成11年生まれの20歳の度会一輝と申します。 programingを始めたのが2019年8月に視野を広げようと思いSEのインターシップに参加し、 そこでのアプリ開発でprograming技術に興味と感動の二つの体験がきっかけ。 しかしSE職は1-10を作るという考えより3の部分を専門的に行うイメージが強く、 1-10できるprograming職はないのか？と調べた結果、フロントエンジニアを発見しhtml、cssを勉強スタート。今では
-        </p>
-
-        <div class="numbers">
-            <span>1</span>
-        </div>
-    </div>
-
-    <!-- class skill -->
-    <div class="skill">
-        <h1 class="sec03">Skill</h1>
-        <p>主にHTML/CSS/JavaScriptを学んでいます。 HTML/CSS/JavaScriptで動的な機能を実装したポートフォリオを作成したり、 JavaScriptを使いテトリスを作成したりなど日々インプットとアウトプットに努めています。 フロントエンドもサーバーエンドもできるようになり、後々フルスタックエンジニアになれるように日々精進しております。 またprogrammingに触れる前には金融、財政の勉強もしておりFP2級も取得してるため、少しはライフプランニングのお話もできます。
-        </p>
-
-        <div class="numbers">
-            <span>2</span>
-        </div>
-    </div>
-
-    <!-- class contact -->
-
-    <div class="contact">
-        <h1 class="sec04">contact</h1>
-        <p>何かありましたら以下のcontactformからどしどしご連絡をください。挨拶などのメールも大歓迎です。</p>
-        <form id="form" class="topBefore" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdaBvhKP3AZXDIUgLjn79hO7ECrpRM3HcY4i_rtxaka8lZFtA/formResponse" method="post">
-            <input id="name" type="text" name="entry.2005620554" placeholder=" Your Name">
-            <input id="email" type="email" name="entry.1045781291" placeholder="Your Email">
-            <textarea id="message" type="text" name="entry.839337160" rows="5" cols="30" placeholder="messages..."></textarea>
-            <input id="submit" type="submit" value="submit!!">
-        </form>
-
-        <div class="numbers">
-            <span>3</span>
-        </div>
-    </div>
-    <!-- script -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-    <script src="js/main.js"></script>
-
 </body>
 
 </html>
