@@ -515,19 +515,6 @@
     /*--------------------------------
 　class skill
 ---------------------------------*/
-    
-    .skill {
-        position: relative;
-        background: url(book.jpg);
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        background-size: cover;
-        color: #fff;
-        padding-top: 110px;
-        min-height: 900px;
-        letter-spacing: 2px;
-        font-family: "Montserrat", sans-serif;
-    }
     /*--------------------------------
 　class contact
 ---------------------------------*/
@@ -652,16 +639,17 @@
             background-size: 100% auto;
         }
     }
+    /* pc　768px以上 */
     
-    .skill {
-        position: relative;
-        background: url(book.jpg);
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        background-size: cover;
-        color: #fff;
-        padding-top: 110px;
-        min-height: 900px;
-        letter-spacing: 2px;
-        font-family: "Montserrat", sans-serif;
+    @media only screen and (min-width: 768px),
+    print {
+        .skill {
+            /* 幅と高さは、画像のサイズと同じサイズで指定 */
+            width: 1000px;
+            height: 467px;
+            margin-left: auto;
+            margin-right: auto;
+            background-image: url(book.jpg);
+            background-repeat: no-repeat;
+        }
     }
