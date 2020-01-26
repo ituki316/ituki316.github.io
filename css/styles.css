@@ -350,7 +350,7 @@ a {
 
 .hero {
     position: relative;
-    background: url(route246.jpg);
+    background: url(route246.jpg) fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -487,7 +487,7 @@ a {
 
 .profile {
     position: relative;
-    background: url(alonemen.jpg);
+    background: url(alonemen.jpg) fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -543,7 +543,7 @@ a {
 
 .skill {
     position: relative;
-    background: url(book.jpg);
+    background: url(book.jpg) fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -567,7 +567,7 @@ a {
 
 .contact {
     position: relative;
-    background: url(sky.jpg);
+    background: url(sky.jpg) fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
