@@ -348,7 +348,6 @@ a {
 　class hero
 ---------------------------------*/
 
-<<<<<<< HEAD
 .hero {
     width: 100%;
     height: 0;
@@ -364,10 +363,6 @@ a {
     min-height: 900px;
     letter-spacing: 2px;
     font-family: "Montserrat", sans-serif;
-=======
-.example {
-    position: relative;
->>>>>>> 300cba1439dfaa7e6c4960f61167344f2ff17a0f
 }
 
 .bubbles h1 {
