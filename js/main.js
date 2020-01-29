@@ -65,7 +65,7 @@ $(function() {
 
 });
 
-// word change
+// word changee
 const txts = $('.text');
 let txtIndex = -1;
 txts.hide()
