@@ -348,6 +348,7 @@ a {
 　class hero
 ---------------------------------*/
 
+<<<<<<< HEAD
 .hero {
     width: 100%;
     height: 0;
@@ -363,19 +364,25 @@ a {
     min-height: 900px;
     letter-spacing: 2px;
     font-family: "Montserrat", sans-serif;
+=======
+.example {
+    position: relative;
+>>>>>>> 300cba1439dfaa7e6c4960f61167344f2ff17a0f
 }
 
-.hero h1 {
-    font-size: 50px;
-    line-height: 1.3;
+.bubbles h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
 }
 
-.hero h1 span {
-    font-size: 25px;
-    color: #e8f380;
-    border-bottom: 2px solid #e8f380;
-    padding-bottom: 12px;
-    line-height: 3;
+.example img {
+    width: 100%;
 }
 
 
@@ -393,28 +400,9 @@ a {
 
 /* bubblesアニメーション */
 
-.bubbles {
-    padding-top: 50px;
-    display: inline-block;
-    font-family: arial;
-    position: relative;
-}
-
-.bubbles h1 {
-    position: relative;
-    margin: 1em 0 0;
-    font-family: 'Luckiest Guy', cursive;
-    color: #fff;
-    z-index: 2;
-    line-height: 1;
-    letter-spacing: .1em;
-    font-size: 110px;
-}
-
 .individual-bubble {
     position: absolute;
     border-radius: 50%;
-    bottom: 10px;
     background-color: #fff;
     z-index: 1;
 }
