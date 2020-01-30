@@ -331,63 +331,23 @@ nav ul a {
     box-sizing: border-box;
 }
 
-body {
-    color: #8f8f8f;
-    background: white;
-    font-family: "Cardo", serif;
-    font-weight: 300;
-    -webkit-font-smoothing: antialiased;
-}
-
 a {
     text-decoration: none;
 }
 
 
 /*--------------------------------
-　class hero
+　class title
 ---------------------------------*/
 
-.hero2 {
-    width: 100%;
-    height: 0;
+.title {
     position: relative;
-    background: url(route246.jpg);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    text-align: center;
-    color: #fff;
-    padding-top: 110px;
-    min-height: 900px;
-    letter-spacing: 2px;
-    font-family: "Montserrat", sans-serif;
 }
 
-.hero2 h1 {
-    font-size: 50px;
-    line-height: 1.3;
+.title img {
+    width: 100%;
+    height: auto;
 }
-
-.hero2 h1 span {
-    font-size: 25px;
-    color: #e8f380;
-    border-bottom: 2px solid #e8f380;
-    padding-bottom: 12px;
-    line-height: 3;
-}
-
-@media only screen and (max-width:480px) {
-    .hero {
-        overflow: scroll;
-    }
-    .hero2 {
-        width: 100%;
-    }
-}
-
-
-/* logo-desc replacement */
 
 .logo-desc {
     font-family: Quicksand, 游ゴシック体, "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
@@ -396,93 +356,50 @@ a {
     letter-spacing: .2em;
     text-align: center;
     color: #fff;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 4vw;
+    white-space: nowrap;
 }
 
-
-/* bubblesアニメーション */
-
-.bubbles {
-    padding-top: 50px;
-    display: inline-block;
-    font-family: arial;
-    position: relative;
+.logo-desc li {
+    list-style: none;
 }
 
-.bubbles h1 {
-    position: relative;
-    margin: 1em 0 0;
+.hello {
+    position: absolute;
+    top: 23%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-family: "Montserrat", sans-serif;
+    font-size: 25px;
+    color: #e8f380;
+    border-bottom: 2px solid #e8f380;
+    line-height: 2;
+    font-size: 2vw;
+    white-space: nowrap;
+}
+
+.name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
     font-family: 'Luckiest Guy', cursive;
     color: #fff;
-    z-index: 2;
-    line-height: 1;
-    letter-spacing: .1em;
-    font-size: 110px;
-}
-
-.individual-bubble {
-    position: absolute;
-    border-radius: 50%;
-    bottom: 10px;
-    background-color: #fff;
-    z-index: 1;
-}
-
-@media screen and (max-width: 1024px) {
-    .bubbles h1 {
-        font-size: 90px;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .bubbles h1 {
-        font-size: 60px;
-    }
-}
-
-
-/* numbers design */
-
-.numbers {
-    display: block;
-    margin: 0 auto;
-    position: absolute;
-    bottom: 40px;
-    left: 49%;
-    font-family: 'Luckiest Guy', cursive;
-}
-
-.numbers span {
-    color: #f5ff97;
-    font-size: 60px;
-    font-weight: normal;
-}
-
-@-webkit-keyframes scroll {
-    0% {
-        opacity: 1;
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-    }
-    100% {
-        opacity: 0;
-        -webkit-transform: translateY(20px);
-        transform: translateY(20px);
-    }
-}
-
-@keyframes scroll {
-    0% {
-        opacity: 1;
-        -webkit-transform: translateY(0);
-        -ms-transform: translateY(0);
-        transform: translateY(0);
-    }
-    100% {
-        opacity: 0;
-        -webkit-transform: translateY(20px);
-        -ms-transform: translateY(20px);
-        transform: translateY(20px);
-    }
+    font-size: 13vw;
+    white-space: nowrap;
+    /*文字の装飾は省略*/
 }
 
 
@@ -492,48 +409,41 @@ a {
 
 .profile {
     position: relative;
-    background: url(alonemen.jpg) no-repeat center center fixed;
-    ;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
     color: #fff;
-    padding-top: 110px;
-    min-height: 900px;
-    letter-spacing: 2px;
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Luckiest Guy', cursive;
 }
 
-.sec02,
-.sec03,
-.sec04 {
-    text-align: center;
-    font-size: 30px;
-    line-height: 1.8;
-    text-transform: uppercase;
-    font-family: "Montserrat", sans-serif;
+.profile h1 {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     margin: 0;
+    padding: 0;
+    font-family: 'Luckiest Guy', cursive;
+    /*文字の装飾は省略*/
 }
 
-.profile p,
-.skill p {
-    padding: 70px 120px;
-    font-size: 17px;
-    line-height: 2;
+.profile p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -30%);
+    -webkit-transform: translate(-50%, -30%);
+    transform: translate(-50%, -30%);
+    margin: 0;
+    padding: 0;
+    font-family: 'Luckiest Guy', cursive;
+    letter-spacing: 1px;
+    font-size: 20px;
+    /*文字の装飾は省略*/
 }
 
-@media only screen and (max-width: 1024px) {
-    .profile p,
-    .skill p {
-        padding: 0 50px;
-    }
-}
-
-@media only screen and (max-width: 766px) {
-    .profile p,
-    .skill p {
-        padding: 0 30px;
-    }
+.profile img {
+    width: 100%;
+    height: auto;
 }
 
 
@@ -543,16 +453,41 @@ a {
 
 .skill {
     position: relative;
-    background: url(book.jpg) no-repeat center center fixed;
-    ;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
     color: #fff;
-    padding-top: 110px;
-    min-height: 900px;
-    letter-spacing: 2px;
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Luckiest Guy', cursive;
+}
+
+.skill h1 {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    font-family: 'Luckiest Guy', cursive;
+    /*文字の装飾は省略*/
+}
+
+.skill p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    font-family: 'Luckiest Guy', cursive;
+    letter-spacing: 1px;
+    font-size: 20px;
+    /*文字の装飾は省略*/
+}
+
+.skill img {
+    width: 100%;
+    height: auto;
 }
 
 
@@ -562,34 +497,54 @@ a {
 
 .contact {
     position: relative;
-    background: url(sky.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
     color: #fff;
-    padding-top: 110px;
-    padding-bottom: 0;
+    font-family: 'Luckiest Guy', cursive;
+}
+
+.contact h1 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     margin: 0;
-    min-height: 900px;
-    letter-spacing: 2px;
-    font-family: "Montserrat", sans-serif;
+    padding: 0;
+    font-family: 'Luckiest Guy', cursive;
+    /*文字の装飾は省略*/
 }
 
 .contact p {
-    width: 520px;
-    margin: 30px auto 60px auto;
-    padding: 0px 15px 0px 15px;
-    font-size: 17px;
-    line-height: 2;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    font-family: 'Luckiest Guy', cursive;
+    letter-spacing: 1px;
+    font-size: 20px;
+    /*文字の装飾は省略*/
+}
+
+.contact img {
+    width: 100%;
+    height: auto;
 }
 
 #form {
-    width: 470px;
-    margin: 50px auto 100px auto;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 input {
-    width: 470px;
+    width: 100%;
     height: 50px;
     padding: 0px 15px 0px 15px;
     background: transparent;
@@ -609,8 +564,8 @@ input::placeholder {
 }
 
 textarea {
-    width: 470px;
-    max-width: 470px;
+    width: 100%;
+    max-width: 100%;
     height: 110px;
     padding: 15px;
     background: transparent;
@@ -628,7 +583,7 @@ textarea::placeholder {
 }
 
 #submit {
-    width: 470px;
+    width: 100%;
     padding: 0;
     margin: -10px 0px 0px 0px;
     font-family: 'Lato', sans-serif;
@@ -648,22 +603,11 @@ textarea::placeholder {
     color: rgb(141, 113, 113);
 }
 
-@media screen and (max-width: 520px) {
-    #form {
-        width: 300px;
-    }
+@media screen and (max-width: 480px) {
     input {
-        font-family: 'Lato', sans-serif;
-        width: 300px;
+        height: 25px;
     }
     textarea {
-        width: 300px;
-        max-width: 300px;
-    }
-    .contact p {
-        width: 300px;
-    }
-    #submit {
-        width: 300px;
+        height: 50px;
     }
 }
