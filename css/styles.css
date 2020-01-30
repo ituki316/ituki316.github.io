@@ -348,7 +348,7 @@ a {
 　class hero
 ---------------------------------*/
 
-.hero2 {
+.hero {
     width: 100%;
     height: 0;
     position: relative;
@@ -407,7 +407,8 @@ a {
     z-index: 2;
     line-height: 1;
     letter-spacing: .1em;
-    font-size: 110px;
+    font-size: 10vw;
+    white-space: nowrap;
 }
 
 .individual-bubble {
