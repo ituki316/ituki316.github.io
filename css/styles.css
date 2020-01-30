@@ -352,7 +352,7 @@ a {
     width: 100%;
     height: 0;
     position: relative;
-    background: url(route246.jpg) no-repeat center center fixed;
+    background: url(route246.jpg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -364,17 +364,26 @@ a {
     font-family: "Montserrat", sans-serif;
 }
 
-.hero h1 {
+.hero2 h1 {
     font-size: 50px;
     line-height: 1.3;
 }
 
-.hero h1 span {
+.hero2 h1 span {
     font-size: 25px;
     color: #e8f380;
     border-bottom: 2px solid #e8f380;
     padding-bottom: 12px;
     line-height: 3;
+}
+
+@media only screen and (max-width:480px) {
+    .hero {
+        overflow: scroll;
+    }
+    .hero2 {
+        width: 100%;
+    }
 }
 
 
