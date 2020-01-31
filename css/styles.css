@@ -358,7 +358,7 @@ a {
     background-size: cover;
     text-align: center;
     color: #fff;
-    padding-top: 130px;
+    padding-top: 110px;
     min-height: 900px;
     letter-spacing: 2px;
     font-family: "Montserrat", sans-serif;
@@ -390,7 +390,7 @@ a {
 /* bubblesアニメーション */
 
 .bubbles {
-    padding-top: 50px;
+    padding-top: 120px;
     display: inline-block;
     font-family: arial;
     position: relative;
@@ -406,6 +406,18 @@ a {
     letter-spacing: .1em;
     font-size: 110px;
     white-space: nowrap;
+}
+
+@media only screen and (max-width: 766px) {
+    .bubbles h1 {
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .bubbles h1 {
+        font-size: 40px;
+    }
 }
 
 .individual-bubble {
@@ -432,6 +444,12 @@ a {
     color: #f5ff97;
     font-size: 60px;
     font-weight: normal;
+}
+
+@media only screen and (max-width: 766px) {
+    .numbers span {
+        font-size: 30px;
+    }
 }
 
 @-webkit-keyframes scroll {
