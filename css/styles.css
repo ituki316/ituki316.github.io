@@ -353,6 +353,7 @@ a {
     height: 0;
     position: relative;
     background: url(route246.png)0 0 no-repeat;
+    background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -488,6 +489,7 @@ a {
 .profile {
     position: relative;
     background: url(alonemen.png)0 0 no-repeat;
+    background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -538,6 +540,7 @@ a {
 .skill {
     position: relative;
     background: url(book.png) 0 0 no-repeat;
+    background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -556,6 +559,7 @@ a {
 .contact {
     position: relative;
     background: url(sky.png) 0 0 no-repeat;
+    background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
