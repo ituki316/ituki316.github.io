@@ -487,21 +487,15 @@ a {
 
 .profile {
     position: relative;
-    background: url(alonemen.png) no-repeat center center fixed;
+    background: url(alonemen.png)0 0 no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
-    color: #fff;
+    color: black;
     padding-top: 110px;
-    min-height: 900px;
+    min-height: 1200px;
     letter-spacing: 2px;
     font-family: "Montserrat", sans-serif;
-}
-
-@media only screen and (max-width: 766px) {
-    .profile {
-        background-size: contain;
-    }
 }
 
 .sec02,
