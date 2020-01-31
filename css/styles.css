@@ -358,7 +358,7 @@ a {
     background-size: cover;
     text-align: center;
     color: #fff;
-    padding-top: 50px;
+    padding-top: 130px;
     min-height: 900px;
     letter-spacing: 2px;
     font-family: "Montserrat", sans-serif;
@@ -404,7 +404,7 @@ a {
     z-index: 2;
     line-height: 1;
     letter-spacing: .1em;
-    font-size: 10vw;
+    font-size: 110px;
     white-space: nowrap;
 }
 
