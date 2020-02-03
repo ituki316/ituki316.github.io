@@ -1,667 +1,99 @@
-/*--------------------------------
-　reset css
----------------------------------*/
+/* https://codepen.io/nickpettit/pen/KtcyI */
 
-html,
-body,
-div,
-span,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-abbr,
-address,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-samp,
-small,
-strong,
-sub,
-sup,
-var,
-b,
-i,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    background: transparent;
+.header,
+.nav {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
 }
 
-body {
-    line-height: 1;
+.header {
+    justify-content: space-between;
 }
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-    display: block;
+.nav {
+    -webkit-flex: 1;
+    flex: 1;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
 }
 
-nav ul {
-    list-style: none;
+@media all and (min-width: 640px) {
+    .header,
+    .nav {
+        -webkit-flex-direction: row;
+        flex-direction: row;
+    }
 }
 
-blockquote,
-q {
-    quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-    content: '';
-    content: none;
-}
-
-a {
-    margin: 0;
-    padding: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    background: transparent;
-}
-
-
-/* change colours to suit your needs */
-
-ins {
-    background-color: #ff9;
-    color: #000;
-    text-decoration: none;
-}
-
-
-/* change colours to suit your needs */
-
-mark {
-    background-color: #ff9;
-    color: #000;
-    font-style: italic;
-    font-weight: bold;
-}
-
-del {
-    text-decoration: line-through;
-}
-
-abbr[title],
-dfn[title] {
-    border-bottom: 1px dotted;
-    cursor: help;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-
-/* change border colour to suit your needs */
-
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #cccccc;
-    margin: 1em 0;
-    padding: 0;
-}
-
-input,
-select {
-    vertical-align: middle;
-}
-
-
-/*--------------------------------
-　class hedaer
----------------------------------*/
-
-.wrap {
-    overflow: hidden;
-}
-
-.main_h {
-    position: fixed;
-    top: 0px;
-    max-height: 70px;
-    z-index: 999;
-    width: 100%;
-    background: none;
-    overflow: hidden;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
-    opacity: 0;
-    top: -100px;
-    font-family: "Montserrat", sans-serif;
-}
-
-@media only screen and (max-width: 766px) {
-    .mobile-toggle {
-        padding-top: 25px;
+@media all and (min-width: 1030px) {
+    .nav {
+        -webkit-flex: none;
+        flex: none;
     }
 }
 
 
-/* header hamburger */
+/******************************
+Treehouse Styling
+*******************************/
 
-.open-nav {
-    max-height: 400px !important;
+body {
+    margin: 0;
+    font-family: Helvetica;
+    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/25480/hero-img.jpg') top center no-repeat;
+    background-size: cover;
 }
 
-.open-nav .mobile-toggle {
-    transform: rotate(-90deg);
-    -webkit-transform: rotate(-90deg);
+.header {
+    padding: 20px 0;
+    margin: 0 auto;
 }
-
-.sticky {
-    background-color: rgba(255, 255, 255, 0.93);
-    opacity: 1;
-    top: 0px;
-    border-bottom: 1px solid gainsboro;
-}
-
-
-/* header menu */
 
 .logo {
-    width: 50px;
-    font-size: 25px;
-    color: #8f8f8f;
-    float: left;
-    display: block;
-    margin-top: 0;
-    line-height: 1;
-    margin-bottom: 10px;
-}
-
-@media only screen and (max-width: 766px) {
-    .logo {
-        float: none;
-    }
-}
-
-nav {
-    float: right;
-    width: 60%;
-}
-
-@media only screen and (max-width: 766px) {
-    nav {
-        width: 100%;
-    }
-}
-
-nav ul {
-    list-style: none;
-    overflow: hidden;
-    text-align: right;
-    float: right;
-}
-
-@media only screen and (max-width: 766px) {
-    nav ul {
-        padding-top: 10px;
-        margin-bottom: 22px;
-        float: left;
-        text-align: center;
-        width: 100%;
-    }
-}
-
-nav ul li {
-    display: inline-block;
-    margin-left: 35px;
-    line-height: 1.5;
-}
-
-@media only screen and (max-width: 766px) {
-    nav ul li {
-        width: 100%;
-        padding: 7px 0;
-        margin: 0;
-    }
-}
-
-nav ul a {
-    color: #888888;
-    text-transform: uppercase;
-    font-size: 12px;
-}
-
-.mobile-toggle {
-    display: none;
-    cursor: pointer;
-    font-size: 20px;
-    position: absolute;
-    right: 22px;
-    top: 0;
-    width: 30px;
-    -webkit-transition: all 200ms ease-in;
-    -moz-transition: all 200ms ease-in;
-    transition: all 200ms ease-in;
-}
-
-@media only screen and (max-width: 766px) {
-    .mobile-toggle {
-        display: block;
-    }
-}
-
-.mobile-toggle span {
-    width: 30px;
-    height: 4px;
-    margin-bottom: 6px;
-    border-radius: 1000px;
-    background: #8f8f8f;
-    display: block;
-}
-
-.row {
-    width: 100%;
-    max-width: 940px;
-    margin: 0 auto;
-    position: relative;
-    padding: 0 2%;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    color: #8f8f8f;
-    background: white;
-    font-family: "Cardo", serif;
-    font-weight: 300;
-    -webkit-font-smoothing: antialiased;
-}
-
-a {
-    text-decoration: none;
-}
-
-
-/*--------------------------------
-　class hero
----------------------------------*/
-
-.hero {
-    width: 100%;
-    height: 0;
-    position: relative;
-    background: url(route246.png)0 0 no-repeat;
-    background-attachment: fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    text-align: center;
-    color: #fff;
-    padding-top: 110px;
-    min-height: 900px;
-    letter-spacing: 2px;
-    font-family: "Montserrat", sans-serif;
-}
-
-@media screen and (max-width: 480px) {}
-
-.hero h1 span {
-    font-size: 25px;
-    color: #e8f380;
-    border-bottom: 2px solid #e8f380;
-    padding-bottom: 12px;
-    line-height: 3;
-}
-
-
-/* logo-desc replacement */
-
-.logo-desc {
-    font-family: Quicksand, 游ゴシック体, "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-    display: block;
-    font-size: 40px;
-    letter-spacing: .2em;
-    text-align: center;
-    color: #fff;
-    padding-bottom: 30px;
-}
-
-
-/* bubblesアニメーション */
-
-.bubbles {
-    padding-top: 90px;
-    display: inline-block;
-    font-family: arial;
-    position: relative;
-}
-
-.bubbles h1 {
-    position: relative;
-    margin: 1em 0 0;
-    font-family: 'Luckiest Guy', cursive;
-    color: #fff;
-    z-index: 2;
-    line-height: 1;
-    letter-spacing: .1em;
-    font-size: 110px;
+    background: transparent url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/25480/treehouse-white.svg') center center no-repeat;
+    width: 195px;
+    background-size: contain;
+    text-indent: 100%;
     white-space: nowrap;
+    overflow: hidden;
 }
 
-@media only screen and (max-width: 766px) {
-    .bubbles h1 {
-        font-size: 60px;
-    }
+.nav {
+    list-style: none;
 }
 
-@media screen and (max-width: 480px) {
-    .bubbles h1 {
-        font-size: 40px;
-    }
+.nav li {
+    margin: 12px 0 12px 28px;
 }
 
-.individual-bubble {
-    position: absolute;
-    border-radius: 50%;
-    bottom: 10px;
-    background-color: #fff;
-    z-index: 1;
-}
-
-
-/* numbers design */
-
-.numbers {
-    display: block;
-    margin: 0 auto;
-    position: absolute;
-    bottom: 40px;
-    left: 49%;
-    font-family: 'Luckiest Guy', cursive;
-}
-
-.numbers span {
-    color: #f5ff97;
-    font-size: 60px;
-    font-weight: normal;
-}
-
-@media only screen and (max-width: 766px) {
-    .numbers span {
-        font-size: 30px;
-    }
-}
-
-@-webkit-keyframes scroll {
-    0% {
-        opacity: 1;
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-    }
-    100% {
-        opacity: 0;
-        -webkit-transform: translateY(20px);
-        transform: translateY(20px);
-    }
-}
-
-@keyframes scroll {
-    0% {
-        opacity: 1;
-        -webkit-transform: translateY(0);
-        -ms-transform: translateY(0);
-        transform: translateY(0);
-    }
-    100% {
-        opacity: 0;
-        -webkit-transform: translateY(20px);
-        -ms-transform: translateY(20px);
-        transform: translateY(20px);
-    }
-}
-
-
-/*--------------------------------
-　class profile
----------------------------------*/
-
-.profile {
-    position: relative;
-    background: url(alonemen.png)0 0 no-repeat;
-    background-attachment: fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    color: black;
-    padding-top: 110px;
-    min-height: 900px;
-    letter-spacing: 2px;
-    font-family: "Montserrat", sans-serif;
-}
-
-.sec02,
-.sec03,
-.sec04 {
-    text-align: center;
-    font-size: 30px;
-    line-height: 1.8;
+.nav li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
     text-transform: uppercase;
-    font-family: "Montserrat", sans-serif;
-    margin: 0;
 }
 
-.profile p,
-.skill p {
-    padding: 70px 120px;
-    font-size: 17px;
-    line-height: 2;
+.nav li a:hover {
+    color: rgba(255, 255, 255, 0.7);
 }
 
-@media only screen and (max-width: 1024px) {
-    .profile p,
-    .skill p {
-        padding: 0 50px;
-    }
+.nav li:last-child a {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 2px;
+    transition: 200ms ease-in-out;
+    padding: 8px 16px 7px;
 }
 
-@media only screen and (max-width: 766px) {
-    .profile p,
-    .skill p {
-        padding: 0 30px;
-    }
-}
-
-
-/*--------------------------------
-　class skill
----------------------------------*/
-
-.skill {
-    position: relative;
-    background: url(book.png) 0 0 no-repeat;
-    background-attachment: fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
+.nav li:last-child a:hover {
+    background: rgba(255, 255, 255, 0.5);
     color: #fff;
-    padding-top: 110px;
-    min-height: 900px;
-    letter-spacing: 2px;
-    font-family: "Montserrat", sans-serif;
 }
 
-
-/*--------------------------------
-　class contact
----------------------------------*/
-
-.contact {
-    position: relative;
-    background: url(sky.png) 0 0 no-repeat;
-    background-attachment: fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    color: #fff;
-    padding-top: 110px;
-    padding-bottom: 0;
-    margin: 0;
-    min-height: 900px;
-    letter-spacing: 2px;
-    font-family: "Montserrat", sans-serif;
-}
-
-.contact p {
-    width: 520px;
-    margin: 30px auto 60px auto;
-    padding: 0px 15px 0px 15px;
-    font-size: 17px;
-    line-height: 2;
-}
-
-#form {
-    width: 470px;
-    margin: 50px auto 100px auto;
-}
-
-input {
-    width: 470px;
-    height: 50px;
-    padding: 0px 15px 0px 15px;
-    background: transparent;
-    outline: none;
-    color: #fff;
-    border: solid 1px #fff;
-    border-bottom: none;
-    transition: all 0.3s ease-in-out;
-}
-
-input:hover {
-    background-color: rgba(255, 255, 255, 0.7);
-}
-
-input::placeholder {
-    color: rgb(141, 113, 113);
-}
-
-textarea {
-    width: 470px;
-    max-width: 470px;
-    height: 110px;
-    padding: 15px;
-    background: transparent;
-    color: black;
-    border: solid 1px #fff;
-    transition: all 0.3s ease-in-out;
-}
-
-textarea:hover {
-    background-color: rgba(255, 255, 255, 0.7);
-}
-
-textarea::placeholder {
-    color: rgb(141, 113, 113);
-}
-
-#submit {
-    width: 470px;
-    padding: 0;
-    margin: -10px 0px 0px 0px;
-    font-family: 'Lato', sans-serif;
-    font-size: 0.875em;
-    color: rgb(141, 113, 113);
-    outline: none;
-    cursor: pointer;
-    border: solid 1px #fff;
-    border-top: none;
-}
-
-#submit:hover {
-    background-color: rgba(255, 255, 255, 0.7);
-}
-
-#submit::placeholder {
-    color: rgb(141, 113, 113);
-}
-
-@media screen and (max-width: 520px) {
-    #form {
-        width: 300px;
-    }
-    input {
-        font-family: 'Lato', sans-serif;
-        width: 300px;
-    }
-    textarea {
-        width: 300px;
-        max-width: 300px;
-    }
-    .contact p {
-        width: 300px;
-    }
-    #submit {
-        width: 300px;
+@media all and (min-width: 1030px) {
+    .header {
+        width: 1030px;
+        min-width: 768px;
     }
 }
