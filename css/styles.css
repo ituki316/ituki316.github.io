@@ -4,6 +4,15 @@
 /* portfolio https://codepen.io/shamim539/pen/VvLLdV */
 
 
+/* contact https://codepen.io/henriquecarvalho/details/epQMvJ */
+
+
+/* skill https://codepen.io/mwhite/pen/LGBvyz */
+
+
+/* footer https://codepen.io/ZachSaucier/pen/AIJpe */
+
+
 /*--------------------------------
 　reset css
 ---------------------------------*/
@@ -334,16 +343,18 @@ nav ul a {
     background-position: top;
     position: relative;
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    font-family: 'Luckiest Guy', cursive;
 }
 
 .brand-box {
     position: absolute;
-    top: 40px;
-    left: 40px;
+    top: 5%;
+    left: 5%;
 }
 
 .brand {
     font-size: 20px;
+    color: whitesmoke
 }
 
 .text-box {
@@ -355,24 +366,39 @@ nav ul a {
 }
 
 .heading-primary {
+    white-space: nowrap;
     color: #fff;
-    text-transform: uppercase;
     backface-visibility: hidden;
     margin-bottom: 30px;
 }
 
 .heading-primary-main {
+    text-transform: uppercase;
     display: block;
     font-size: 26px;
     font-weight: 400;
     letter-spacing: 5px;
 }
 
-.heading-primary-sub {
+.heading-primary-sub,
+.heading-primary-sub2 {
     display: block;
     font-size: 18px;
     font-weight: 700;
     letter-spacing: 7.4px;
+}
+
+.heading-primary-sub2 {
+    display: none;
+}
+
+@media(max-width:768px) {
+    .heading-primary-sub {
+        display: none;
+    }
+    .heading-primary-sub2 {
+        display: block;
+    }
 }
 
 .btn:link,
@@ -402,16 +428,21 @@ nav ul a {
     font-size: 14px;
 }
 
+.fab {
+    padding-right: 5px;
+}
+
 
 /* section */
 
 section {
-    padding: 100px 0;
+    padding: 100px 0 30px 0;
+    font-family: 'Luckiest Guy', cursive;
 }
 
 section h2.section-heading {
     margin-top: 0;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     font-size: 40px;
     text-align: center;
 }
@@ -419,16 +450,10 @@ section h2.section-heading {
 section h3.section-subheading {
     margin-bottom: 75px;
     text-transform: none;
-    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 16px;
     font-style: italic;
     font-weight: 400;
-}
-
-@media(min-width:768px) {
-    section {
-        padding: 150px 0;
-    }
+    text-align: left;
 }
 
 .timeline {
@@ -493,11 +518,9 @@ section h3.section-subheading {
     width: 80px;
     height: 80px;
     margin-left: 0;
-    border: 7px solid #f1f1f1;
     border-radius: 100%;
     text-align: center;
     color: #fff;
-    background-color: #1ee2e7;
 }
 
 .timeline>li .timeline-image h4 {
@@ -547,6 +570,8 @@ section h3.section-subheading {
 .text-muted {
     font-size: 18px;
     line-height: 1.75;
+    text-align: left;
+    font-family: 'Luckiest Guy', cursive;
 }
 
 .timeline-heading {
@@ -595,7 +620,7 @@ section h3.section-subheading {
     .timeline>li .timeline-image {
         width: 150px;
         height: 150px;
-        margin-left: -75px;
+        margin-left: -75px
     }
     .timeline>li .timeline-image h4 {
         margin-top: 30px;
@@ -628,7 +653,85 @@ section h3.section-subheading {
 }
 
 
+/* skill */
+
+.cf {
+    font-family: 'Luckiest Guy', cursive;
+}
+
+.skill {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.s {
+    color: #777777;
+    text-transform: none;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    text-align: left;
+    line-height: 1.75;
+    margin: 0;
+}
+
+
+/* ========================
+Sections
+======================== */
+
+.features {
+    padding: 5em 0;
+}
+
+.features {
+    text-align: center;
+}
+
+.features img {
+    display: block;
+    margin: 0 auto 1em;
+    max-width: 200px;
+}
+
+.features .col-3 {
+    margin: 3em auto;
+    width: 100%;
+}
+
+.col-3 p {
+    text-align: left;
+}
+
+
+/* ========================
+Media Queries
+======================== */
+
+@media (min-width: 768px) {
+    .features .col-3 {
+        float: left;
+        margin: 2em 5% 0 0;
+        padding: 0 1em;
+        width: 30%;
+    }
+    .features .col-3:last-of-type {
+        margin-right: 0;
+    }
+}
+
+
 /* portfolio */
+
+.rows {
+    font-family: 'Luckiest Guy', cursive;
+}
+
+.col-md-4 {
+    padding-top: 30px;
+}
 
 .heading-title {
     margin-bottom: 100px;
@@ -649,7 +752,6 @@ section h3.section-subheading {
 }
 
 .half-txt {
-    width: 60%;
     margin: 0 auto;
     display: inline-block;
     line-height: 25px;
@@ -767,11 +869,65 @@ section h3.section-subheading {
     margin-bottom: 0px;
     display: block;
     text-transform: uppercase;
+    padding-bottom: 100px;
 }
 
-.team-title span {
-    font-size: 12px;
-    text-transform: uppercase;
-    color: #a5a5a5;
-    letter-spacing: 1px;
+
+/* footer */
+
+footer {
+    background-color: skyblue;
+    padding: 30px;
+}
+
+.ff {
+    max-width: 420px;
+    margin: 50px auto;
+}
+
+.feedback-input {
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: transparent;
+    border: 2px solid #CC6666;
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+.feedback-input:focus {
+    border: 2px solid #CC4949;
+}
+
+textarea {
+    height: 150px;
+    line-height: 150%;
+    resize: vertical;
+}
+
+[type="submit"] {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    width: 100%;
+    background: #CC6666;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 0.3s;
+    margin-top: -4px;
+    font-weight: 700;
+}
+
+[type="submit"]:hover {
+    background: #CC4949;
 }
