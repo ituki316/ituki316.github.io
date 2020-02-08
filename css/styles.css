@@ -877,10 +877,10 @@ Media Queries
 
 footer {
     background-color: skyblue;
-    padding: 30px;
+    padding: 60px;
 }
 
-.ff {
+#form {
     max-width: 420px;
     margin: 50px auto;
 }
